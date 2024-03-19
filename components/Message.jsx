@@ -11,17 +11,16 @@ const Message = ({ msg }) => {
       hour12: true,
     })
     .slice(0, 5);
-  // console.log(time);
+
   return (
-    <div className="min-w-[100px] bg-blue-700 p-2 rounded-[20px]">
+    <div className="min-w-[100px] max-w-[400px] bg-blue-700 p-2 rounded-[20px] break-words">
       {message}
-      <div className="w-full text-end text-[10px]">
-        {time} {
-            time >= 12 ? "PM" : "AM"
-        }
+      <div className="w-full text-end max-w-[200px] text-[10px]">
+        {time} {time >= 12 ? "PM" : "AM"}
       </div>
     </div>
   );
 };
 
 export default Message;
+
