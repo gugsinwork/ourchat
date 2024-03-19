@@ -42,7 +42,7 @@ const ChatCard = ({ chatData }) => {
         {online ? <span className="w-3 h-3 bg-green-500 rounded-full absolute z-[999] bottom-0 right-1"></span> : ""}
       </div>
       <div className="flex flex-col ">
-        <span className="font-black text-[14px]">{name || "User"}</span>
+        <span className="text-[14px]">{name || "User"}</span>
       </div>
       
     </div>

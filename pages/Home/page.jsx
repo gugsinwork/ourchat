@@ -1,8 +1,8 @@
 import React from 'react'
 import Image from "next/future/image"
 import { signInWithPopup } from "firebase/auth"
-import { auth, provider } from '../firebase'
-import Header from './Header'
+import { auth, provider } from '../../firebase'
+import Header from '../../components/Header'
 
 const Login = () => {
     const login = async () => {

@@ -1,4 +1,4 @@
-import Login from '../components/Login'
+import Login from './Home/page'
 import Sidebar from '../components/Sidebar'
 import { auth, db } from '../firebase'
 import '../styles/globals.css'
