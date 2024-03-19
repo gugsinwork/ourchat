@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+body {
+  overflow: hidden;
+  font-family: "Space Grotesk", sans-serif;
+  background: black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+.gradient {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+}
+
+/* linear-gradient(-45deg, rgb(255, 0, 0), rgb(255, 123, 0), rgb(255, 0, 204), rgb(255, 0, 102)) */
+/* linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), */
+.drop-btn:focus > .drop-down {
+  z-index: 99 !important;
+  opacity: 1 !important;
+}
