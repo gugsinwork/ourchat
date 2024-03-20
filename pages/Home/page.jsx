@@ -84,7 +84,7 @@ const Login = () => {
           alt="Descrição da imagem"
           height={600} // Largura da imagem
           width={600}
-          className='max-sm:w-[300px] relative max-sm:bottom-[95px]'
+          className='max-sm:w-[300px] relative max-sm:bottom-[25px]'
           />
         </div>
     </div>
