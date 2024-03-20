@@ -41,7 +41,7 @@ const Sidebar = () => {
   const q = query(chatsRef, where("users", "array-contains", user?.email));
   const [chatSnapShots, loading3] = useCollection(q);
   return (
-    <div className="w-[400px] h-screen p-5 bg-black border-r-2 border-neutral-900">
+    <div className="w-[400px] max-sm:w-[120px] h-screen p-5 bg-black border-r-2 border-neutral-900">
       <div className="flex items-center w-full space-x-4">
         <div>
           <button className="text-2xl group">

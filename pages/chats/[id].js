@@ -74,7 +74,7 @@ const Id = ({ id, chatData }) => {
         </div>
         <div>
           <div>{name}</div>
-          <div className="text-neutral-700">
+          <div className="text-neutral-700 text-[17px] max-sm:text-[13px]">
             Visto por último às {time || ""} em {date || ""}
           </div>
         </div>
