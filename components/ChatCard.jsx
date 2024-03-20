@@ -28,7 +28,7 @@ const ChatCard = ({ chatData }) => {
 
   return (
     <Link href={`/chats/${chatData?.id}`}>
-    <div className="w-full flex items-center py-3 px-5 bg-neutral-900  rounded-xl mt-4 space-x-2 cursor-pointer hover:scale-95 transition-all ease-in-out duration-200 hover:bg-neutral-900">
+    <div className="w-full mr-5 flex items-center py-3 px-5 bg-neutral-900  rounded-xl mt-4 space-x-2 cursor-pointer hover:scale-95 transition-all ease-in-out duration-200 hover:bg-neutral-900">
       <div className="rounded-full w-[55px] h-[55px] relative">
         <Image
           src={imageURL || DefaultImage}

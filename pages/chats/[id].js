@@ -1,19 +1,12 @@
 import React, { useState } from "react";
-import Image from "next/future/image";
-import DefaultImage from "../../public/images/default.png";
 import Message from "../../components/Message";
 import { MdSend } from "react-icons/md";
-import {
-  collection,
-  addDoc,
-  serverTimestamp,
-  query,
-  orderBy,
-  where,
-} from "firebase/firestore";
+import { collection, addDoc, serverTimestamp, query, orderBy, where } from "firebase/firestore";
 import { auth, db } from "../../firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useCollection } from "react-firebase-hooks/firestore";
+import Image from "next/image";
+import DefaultImage from "../../public/images/default.png"; 
 import { doc, getDoc } from "firebase/firestore";
 
 export async function getServerSideProps(context) {
@@ -50,7 +43,6 @@ const Id = ({ id, chatData }) => {
   };
   const data = JSON.parse(chatData);
   const reciverEmail = data?.users?.filter((item) => item !== user?.email)?.[0];
-  // console.log(reciverEmail);
   const usersRef = collection(db, "users");
   const q2 = query(usersRef, where("email", "==", reciverEmail));
   const [userSnapShot, loading3] = useCollection(q2);
@@ -109,6 +101,7 @@ const Id = ({ id, chatData }) => {
         className="w-full p-5 bg-[#000000] backdrop-blur-sm h-full"
       >
         <div className="flex items-center bottom-2 relative">
+          
           <input
             type="text"
             className="w-full border pr-10 pl-5 py-4 bg-transparent rounded-[10px] outline-none focus:border-[#ffffff]"
