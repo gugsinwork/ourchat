@@ -79,7 +79,7 @@ const Id = ({ id, chatData }) => {
           </div>
         </div>
       </div>
-      <div className="w-full h-[77vh] max-sm:h-[550px] overflow-y-auto overflow-x-hidden p-5">
+      <div className="w-full h-[77vh] max-sm:h-[580px] overflow-y-auto overflow-x-hidden p-5">
         {messageSnapshots?.docs?.map((msg) => {
           if (msg.data().chatId === id) {
             return (
